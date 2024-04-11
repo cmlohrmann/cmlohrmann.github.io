@@ -47,13 +47,14 @@ To select the right pattern, first we build a gigantic pattern bank that contain
 
 Then we have to score each pattern, using these trees. The score is the equation below.
 
-TODO: insert equation
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+$$ {\lambda_p = \sum_{i=1}^{|T|} \mathcal{H}(T_{i,p}) + \left(\frac{|P_{i,\textrm{shared}}| - 1}{|P|}\right) * \mathcal{H}(T_{i,\textrm{shared}})} $$
 
 While it looks complicated, it can be easily explained. For each subtask the robot picks, first we ask: given the pattern, what could come next? Then we calculate the entropy over the group of subtasks that might come next. Next we ask: are there any other patterns that match the robot’s behavior thus far? If so, we want to see what the possible next subtasks are for those patterns, because a human might think that the robot is doing that pattern. The picture below shows this process across three pattern trees. We will then calculate the entropy over the group of next possible actions for the real pattern as well as the matching ones.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/THRI/term_2_ex_revised.png" title="Term 2 Example" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/THRI/term_2_ex_revised_2.png" title="Term 2 Example" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -64,7 +65,17 @@ We’ll add those two numbers together, scaling the second one by how many patte
 
 Of course, we have to test this with real people to see that it works. We constructed a human-robot coordination game to test the teams’ ability to coordinate their actions. In this game, a grid is placed between the robot and human, and nine blocks are placed in various squares of the grid. Each block has a colorful shape on it, which is visible to the human, and has a numerical value, which is only visible to the robot. Teams will attempt to coordinate on which block they should remove from the grid next. Both the robot and the human will secretly select a type of block to remove from the board. When they’ve both made a decision, each player’s selection will be revealed to the team. If they coordinate successfully, by choosing the same block, they’ll get a reward, and the robot will be able to remove the block from the grid. If they picked different blocks, a penalty will be assessed, and they’ll have to try again. The score is based on the numerical value of the block that only the robot can see. Thus, there’s a certain sequence that will maximize the team’s score, if they can coordinate. The score is also scaled by how likely it was that the coordination was random, so the score decreases as time goes on. The teams played three rounds, and the robot’s method of choosing which block to grab next remained the same across all three rounds.
 
-TODO: insert maria and round set up pics
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/maria.png" title="Experiment setup" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/round_1_setup.png" title="Pattern tree example" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    On the left, you can see how people interacted with the robot during the experiment. On the right is the layout for the collaborative game. Nine blocks, each with a color, shape, and reward value are placed on the grid. Only the robot has knowledge of the rewards. Both players secretly select a block by color and shape, and if they coordinate, the robot removes a block from the grid.
+</div>
 
 We divided participants into three groups. In the first group, the robot would select blocks optimally, such that in perfect coordination, the team's score would be as high as possible. We had two experimental groups, because we wanted to ensure that any success would not just be due to using patterns, but due to the PACT method of selecting the best pattern. In one group, which we called our Median Group, the robot’s behavior followed a pattern, but a pattern was selected such that its score was close to the median score for all patterns in the pattern bank. So a pattern, but not the best one. These patterns were usually deterministic, but not often unique. The third group saw the best pattern as determined by PACT. In the pattern groups, the robot would follow the same pattern across all three rounds.
 
@@ -72,56 +83,42 @@ We collected all sorts of data, including game scores, decision making time, num
 
 In short, PACT works! But there’s more to it than that. Our results showed that the use of any pattern improved team performance on the coordination task. However! The pattern participants saw mattered, and it mattered a lot. Even though participants in the Median Pattern group played several relatively successful rounds of the coordination game, they didn’t like the robot as much as the participants who saw a PACT pattern. These participants didn’t think the robot was a good teammate, and didn’t feel like most people would be able to understand how the robot made decisions. This was down to the uniqueness of the patterns in the Median Pattern group.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/likeable.png" title="Robot likeability" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Spoiler alert: when they didn't see a clear pattern, people didn't like the robot!
+</div>
+
 These participants could play almost all of the first round, coordinating perfectly, while following a pattern different from the robot’s true pattern. After the first round, these participants were certain that they had solved it.  When their expectations and assumptions were not met by the robot, their confidence plummeted, as did their feelings about the robot. They never recovered from the mismatch in expectations! 
 
-TODO: insert mistakes and scores graphs
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/mistakes.png" title="Number of mistakes" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Participants in the group that engaged with a robot using PACT made significantly fewer mistakes than the baseline group across all three rounds, whereas the Median group only made significantly fewer mistakes in two rounds. The Median group did poorly in Round 2 because they thought they understood the robot's behavior, but weren't following the right pattern!
+</div>
 
 PACT patterns led to fewer mistakes and higher scores for teams. Humans who saw PACT patterns liked the robot, found it both predictable and understandable, and didn’t feel as though a human teammate would have led to a better outcome - which is pretty crazy when you think about it!
 
-TODO: insert other graphs
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/predictable.png" title="Predictability and Understandability results" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/bestblock.png" title="Best block results" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    On the left, you can see how people felt about the predictability and understandability of the robot. Participants in the PACT Pattern and the Median Pattern both found the robot significantly more predictable than the baseline. Both groups also found the robot's behavior more understandable than the baseline group. But! Only the participants who used PACT felt the robot would be broadly understandable to people when compared to everyone else!! On the right, you can see how people felt about the team. Only the PACT group felt that the robot was choosing the right block!
+</div>
 
 Additionally, our interviews uncovered some strange and interesting things! In the optimal group, half of the participants felt the robot behaved randomly, while the other half believed that the robot was following a pattern based on the features they could see. Some were able to articulate complex patterns they felt they saw the robot performing, and many were convinced that with a few more rounds of gameplay they would be able to figure it out. Few participants in this group felt that the robot knew things about the game that they didn’t; that the robot’s behavior was based on something they didn’t know. They felt that there was nothing they didn’t know! 
 
 Curiously, despite many having played perfectly coordinated rounds with the robot, and the entire group achieving over 80% accuracy on identifying the first and last blocks the robot would select in a novel environment, PACT participants struggled to articulate the robot’s decision making process. They found the robot predictable, understandable, and could abstract its behavior to novel environments with ease but less than 17% of them could accurately describe the pattern they saw! Many participants said things like “Something with blue” or “The robot liked blue blocks”. So the robot, while being super predictable, wasn't explainable at all!
 
 There are some really interesting ramifications for human-robot teaming here. In this case, we do not attempt to balance predictability with optimality (stay tuned for future work where we explore this balance!). Here we show that by matching human expectations based on cognitive science and the human propensity for patterns, we can get better outcomes in a teaming setting - even if we totally ignore optimality. We also found some kooky stuff in our interviews with participants. Participants found the PACT patterns understandable, but couldn’t explain them at all - which raises some interesting questions. Do humans need to be able to explain or articulate robot behavior at all for it to be highly effective? After all, are we really all that good at explaining human behavior either?
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
