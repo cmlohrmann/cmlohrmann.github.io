@@ -8,13 +8,27 @@ category: work
 related_publications: 2024THRI
 ---
 
-TODO: add a pic here
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/shapes.gif" title="Tom Haverford Shapes" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    There's something about the shapes!
+</div>
 
 Human-robot teaming is stymied by the ultimate hardware incompatibility issue. Humans reason and make decisions using their brains, an awesome and not fully understood supercomputer, honed through millennia of evolution [CITE]. Robots mostly use math. These hugely different reasoning styles lead humans and robots to reach different solutions and conclusions. In the visual below, the robot will pursue the true optimal - the lowest possible value for the cost function visible. Humans will reach a low value, though it is unlikely their solution will be optimal. It will instead be satisficable - or “good enough” [CITE]. This is because human brains are built to solve real-life problems, where the optimal solution may not exist, or it may not be computationally tractable to find it fast enough [CITE].
 
 This hardware difference makes it very hard for us as humans to collaborate with robots. When humans collaborate, we build what is called a mental model of our teammates – a structure that we use to predict and estimate the behavior of others [CITE]. This helps us to set expectations about what someone’s capabilities are, or what they might do. Unfortunately, while the mental models we build are amazing when applied to other humans, they’re pretty bad when we have to reason about robots [CITE]. Robots don’t match our expectations, and we find them very unpredictable [CITE]. Anyone who has watched something like a robot vacuum do its work knows this to be true. Oftentimes, the robot will do something that confuses, or irritates us, because it has a different set of sensors than we do, and is using math to reason over that information.
 
-TODO: pic or gif here
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/roomba.gif" title="Dumb Roomba" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    PHOTO BY LUKEEVANSSIMON/REDDIT
+</div>
 
 But we want robots to be predictable, because more predictable teammates lead to better collaboration, and we prefer to work with predictable robots [CITE]. When the robot is more predictable, there are a lots of downstream benefits, such as increased trust [CITE]. So if we can alter the robot’s behavior to be more predictable to humans, there’s a lot of benefits to be gained, both in performance, but also in how people feel about working with robots.
 
