@@ -8,6 +8,7 @@ category: work
 related_publications: 2024THRI
 ---
 
+<img src="assets/img/THRI/shapes.gif" alt="Tom Haverford Shapes" class="center">
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/THRI/shapes.gif" title="Tom Haverford Shapes" class="img-fluid rounded z-depth-1" %}
