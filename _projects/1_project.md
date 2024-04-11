@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: There's something about the shapes -- robot's using patterns to be more predictable.
+description: A plain-english writeup about my 2024 THRI paper on pattern-based conventions for human-robot collaboration.
 img: assets/img/12.jpg
 importance: 1
 category: work
