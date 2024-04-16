@@ -66,7 +66,7 @@ $$ {\lambda_p = \sum_{i=1}^{|T|} \mathcal{H}(T_{i,p}) + \left(\frac{|P_{i,\textr
 
 While it looks complicated, it can be easily explained. For each subtask the robot picks, first we ask: given the pattern, what could come next? Then we calculate the entropy over the group of subtasks that might come next. Next we ask: are there any other patterns that match the robot’s behavior thus far? If so, we want to see what the possible next subtasks are for those patterns, because a human might think that the robot is doing that pattern. The picture below shows this process across three pattern trees. We will then calculate the entropy over the group of next possible actions for the real pattern as well as the matching ones.
 
-
+<br>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/THRI/term_2_ex_revised_2.png" title="Term 2 Example" class="img-fluid rounded z-depth-1" %}
