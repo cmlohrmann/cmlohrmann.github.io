@@ -10,21 +10,13 @@ related_publications: 2024THRI
 
 <div class="row">
     <div class="center-block">
-        {% include figure.html path="assets/img/THRI/shapes.gif" title="Tom Haverford Shapes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/THRI/shapes.gif" title="Tom Haverford Shapes" class="mx-auto d-block" %}
     </div>
 </div>
 <div class="caption">
     There's something about the shapes!
 </div>
 <br>
-
-<div class="container">
-  <div class="row">
-    <div class="span4"></div>
-    <div class="span4"><img class="center-block" src="assets/img/THRI/shapes.gif" /></div>
-    <div class="span4"></div>
-  </div>
-</div>
 
 Human-robot teaming is stymied by the ultimate hardware incompatibility issue. Humans reason and make decisions using their brains, an awesome and not fully understood supercomputer, honed through millennia of evolution. Robots mostly use math. These hugely different reasoning styles lead humans and robots to reach different solutions and conclusions. In the visual below, the robot will pursue the true optimal - the lowest possible value for the cost function visible. Humans will reach a low value, though it is unlikely their solution will be optimal. It will instead be satisficable - or “good enough”. This is because human brains are built to solve real-life problems, where the optimal solution may not exist, or it may not be computationally tractable to find it fast enough.
 
