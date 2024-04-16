@@ -8,10 +8,8 @@ category: work
 related_publications: 2024THRI
 ---
 
-<div class="row">
-    <div class="center-block">
-        {% include figure.html path="assets/img/THRI/shapes.gif" title="Tom Haverford Shapes" class="mx-auto d-block" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/THRI/shapes.gif" title="Tom Haverford Shapes" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     There's something about the shapes!
