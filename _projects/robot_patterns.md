@@ -20,11 +20,8 @@ Human-robot teaming is stymied by the ultimate hardware incompatibility issue. H
 
 This hardware difference makes it very hard for us as humans to collaborate with robots. When humans collaborate, we build what is called a mental model of our teammates – a structure that we use to predict and estimate the behavior of others. This helps us to set expectations about what someone’s capabilities are, or what they might do. Unfortunately, while the mental models we build are amazing when applied to other humans, they’re pretty bad when we have to reason about robots. Robots don’t match our expectations, and we find them very unpredictable. Anyone who has watched something like a robot vacuum do its work knows this to be true. Oftentimes, the robot will do something that confuses, or irritates us, because it has a different set of sensors than we do, and is using math to reason over that information.
 
-<br>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/THRI/roomba.gif" title="Dumb Roomba" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/THRI/roomba.gif" title="Dumb Roomba" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     PHOTO BY LUKEEVANSSIMON/REDDIT
@@ -36,15 +33,14 @@ But we want robots to be predictable, because more predictable teammates lead to
 Unfortunately, getting humans to change their behavior is hard. Changing the robot’s behavior is a lot easier, because we program them ourselves. So in this work, we focus on altering robot behavior to be more in line with human expectations. So what do humans like? A lot of research tells us that humans LOVE patterns. Pattern recognition, extension, and abstraction are critical aspects of our intelligence, and we are able to do them as toddlers. So if we base the robot’s behavior on patterns, humans should be able to recognize what the robot is doing, and our brains should be pretty good at continuing the pattern, as well as abstracting it into new environments. We’ll structure this as a subtask planning problem, where the robot will complete a set of subtasks in a particular order. We’ll set up our environment such that there’s an optimal way for the robot to behave, so we can compare it to our method. We need to make sure that humans will be able to see the pattern, so we’ll build our patterns based on human-visible features of each subtask. An example setting is shown below. The robot will have to navigate to all of these locations. The locations have several features each, which we will use to construct our patterns. The image below shows the scenario and the subtask features.
 
 <br>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/THRI/city_visual_revised.png" title="Subtask Example" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/THRI/city_visual_revised.png" title="Subtask Example" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     In this illustration of the PACT algorithm, we use a scenario in which a natural disaster has occurred in a coastal town. Critical infrastructure must be checked for damage, and an autonomous drone as well as a human team on the ground are tasked with damage assessment. In this time-sensitive task, communication between the drone and humans is limited. Each location indicated on the map has features used by PACT: whether the location contains humans that sheltered in place (red), the type of infrastructure (blue), and the likelihood the location is flooded (green).
 </div>
 <br>
+
 
 We will ignore optimality for now (stay tuned for our current work that seeks to balance optimality and predictability more explicitly!). We want the pattern to be easy to follow, such that if the human knows the pattern, what subtask the robot will complete next is obvious (ie there’s only one subtask that fits the next step), so we want our patterns to be as deterministic as possible. Because humans are so prone to pattern recognition, they might see a pattern in the robot’s behavior that doesn’t actually exist. So we want to ensure that the robot’s behavior can’t be explained by a bunch of different patterns, so the pattern should be unique. This means that only the pattern the robot is following can fully explain its behavior -- there’s no ambiguity about what pattern the robot is following.
 
@@ -73,10 +69,8 @@ $$ {\lambda_p = \sum_{i=1}^{|T|} \mathcal{H}(T_{i,p}) + \left(\frac{|P_{i,\textr
 While it looks complicated, it can be easily explained. For each subtask the robot picks, first we ask: given the pattern, what could come next? Then we calculate the entropy over the group of subtasks that might come next. Next we ask: are there any other patterns that match the robot’s behavior thus far? If so, we want to see what the possible next subtasks are for those patterns, because a human might think that the robot is doing that pattern. The picture below shows this process across three pattern trees. We will then calculate the entropy over the group of next possible actions for the real pattern as well as the matching ones.
 
 <br>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/THRI/term_2_ex_revised_2.png" title="Term 2 Example" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/THRI/term_2_ex_revised_2.png" title="Term 2 Example" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     This picture shows how the second term of the score is calculated for a given pattern (the same pattern shown in the tree example, just showing more levels). First, the possible orderings of length 2 are identified for the given pattern, seen in the left tree. There are two possible subtask orderings of length 2, highlighted in red and blue. However, these orderings are not unique to this pattern! There may be other patterns in the pattern bank that share these orderings of length 2. Two such patterns are shown here, with the matching orderings circled. If a human partner observes the robot going to B then G, they can't tell which pattern te robot is following! The (starred) children of these shared orderings are extracted from all patterns in the bank, and the entropy over this group is calculated.
@@ -108,10 +102,8 @@ We collected all sorts of data, including game scores, decision making time, num
 In short, PACT works! But there’s more to it than that. Our results showed that the use of any pattern improved team performance on the coordination task. However! The pattern participants saw mattered, and it mattered a lot. Even though participants in the Median Pattern group played several relatively successful rounds of the coordination game, they didn’t like the robot as much as the participants who saw a PACT pattern. These participants didn’t think the robot was a good teammate, and didn’t feel like most people would be able to understand how the robot made decisions. This was down to the uniqueness of the patterns in the Median Pattern group.
 
 <br>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/THRI/likeable.png" title="Robot likeability" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/THRI/likeable.png" title="Robot likeability" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     Spoiler alert: when they didn't see a clear pattern, people didn't like the robot!
@@ -121,10 +113,8 @@ In short, PACT works! But there’s more to it than that. Our results showed tha
 These participants could play almost all of the first round, coordinating perfectly, while following a pattern different from the robot’s true pattern. After the first round, these participants were certain that they had solved it.  When their expectations and assumptions were not met by the robot, their confidence plummeted, as did their feelings about the robot. They never recovered from the mismatch in expectations! 
 
 <br>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/THRI/mistakes.png" title="Number of mistakes" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/THRI/mistakes.png" title="Number of mistakes" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     Participants in the group that engaged with a robot using PACT made significantly fewer mistakes than the baseline group across all three rounds, whereas the Median group only made significantly fewer mistakes in two rounds. The Median group did poorly in Round 2 because they thought they understood the robot's behavior, but weren't following the right pattern!
