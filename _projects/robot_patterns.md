@@ -26,15 +26,16 @@ This hardware difference makes it very hard for us as humans to collaborate with
 <div class="caption">
     PHOTO BY LUKEEVANSSIMON/REDDIT
 </div>
-<br>
 
 But we want robots to be predictable, because more predictable teammates lead to better collaboration, and we prefer to work with predictable robots. When the robot is more predictable, there are a lots of downstream benefits, such as increased trust. So if we can alter the robot’s behavior to be more predictable to humans, there’s a lot of benefits to be gained, both in performance, but also in how people feel about working with robots.
 
 Unfortunately, getting humans to change their behavior is hard. Changing the robot’s behavior is a lot easier, because we program them ourselves. So in this work, we focus on altering robot behavior to be more in line with human expectations. So what do humans like? A lot of research tells us that humans LOVE patterns. Pattern recognition, extension, and abstraction are critical aspects of our intelligence, and we are able to do them as toddlers. So if we base the robot’s behavior on patterns, humans should be able to recognize what the robot is doing, and our brains should be pretty good at continuing the pattern, as well as abstracting it into new environments. We’ll structure this as a subtask planning problem, where the robot will complete a set of subtasks in a particular order. We’ll set up our environment such that there’s an optimal way for the robot to behave, so we can compare it to our method. We need to make sure that humans will be able to see the pattern, so we’ll build our patterns based on human-visible features of each subtask. An example setting is shown below. The robot will have to navigate to all of these locations. The locations have several features each, which we will use to construct our patterns. The image below shows the scenario and the subtask features.
 
 <br>
-<div class="center-block">
-    {% include figure.html path="assets/img/THRI/city_visual_revised.png" title="Subtask Example" class="mx-auto d-block" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/city_visual_revised.png" title="Subtask example" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 <div class="caption">
     In this illustration of the PACT algorithm, we use a scenario in which a natural disaster has occurred in a coastal town. Critical infrastructure must be checked for damage, and an autonomous drone as well as a human team on the ground are tasked with damage assessment. In this time-sensitive task, communication between the drone and humans is limited. Each location indicated on the map has features used by PACT: whether the location contains humans that sheltered in place (red), the type of infrastructure (blue), and the likelihood the location is flooded (green).
@@ -69,8 +70,10 @@ $$ {\lambda_p = \sum_{i=1}^{|T|} \mathcal{H}(T_{i,p}) + \left(\frac{|P_{i,\textr
 While it looks complicated, it can be easily explained. For each subtask the robot picks, first we ask: given the pattern, what could come next? Then we calculate the entropy over the group of subtasks that might come next. Next we ask: are there any other patterns that match the robot’s behavior thus far? If so, we want to see what the possible next subtasks are for those patterns, because a human might think that the robot is doing that pattern. The picture below shows this process across three pattern trees. We will then calculate the entropy over the group of next possible actions for the real pattern as well as the matching ones.
 
 <br>
-<div class="center-block">
-    {% include figure.html path="assets/img/THRI/term_2_ex_revised_2.png" title="Term 2 Example" class="mx-auto d-block" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/THRI/term_2_ex_revised_2.png" title="Term 2 example" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 <div class="caption">
     This picture shows how the second term of the score is calculated for a given pattern (the same pattern shown in the tree example, just showing more levels). First, the possible orderings of length 2 are identified for the given pattern, seen in the left tree. There are two possible subtask orderings of length 2, highlighted in red and blue. However, these orderings are not unique to this pattern! There may be other patterns in the pattern bank that share these orderings of length 2. Two such patterns are shown here, with the matching orderings circled. If a human partner observes the robot going to B then G, they can't tell which pattern te robot is following! The (starred) children of these shared orderings are extracted from all patterns in the bank, and the entropy over this group is calculated.
