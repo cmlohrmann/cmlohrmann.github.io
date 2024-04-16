@@ -48,7 +48,7 @@ We will ignore optimality for now (stay tuned for our current work that seeks to
 To select the right pattern, first we build a gigantic pattern bank that contains every possible pattern given the features of the subtasks. Then using each of the patterns, we’ll construct a pattern tree, which contains every possible order of subtasks that follows the given pattern. 
 
 <br>
-<div class="row">
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/THRI/features_to_patterns_revised.png" title="Features to patterns" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -85,7 +85,7 @@ We’ll add those two numbers together, scaling the second one by how many patte
 Of course, we have to test this with real people to see that it works. We constructed a human-robot coordination game to test the teams’ ability to coordinate their actions. In this game, a grid is placed between the robot and human, and nine blocks are placed in various squares of the grid. Each block has a colorful shape on it, which is visible to the human, and has a numerical value, which is only visible to the robot. Teams will attempt to coordinate on which block they should remove from the grid next. Both the robot and the human will secretly select a type of block to remove from the board. When they’ve both made a decision, each player’s selection will be revealed to the team. If they coordinate successfully, by choosing the same block, they’ll get a reward, and the robot will be able to remove the block from the grid. If they picked different blocks, a penalty will be assessed, and they’ll have to try again. The score is based on the numerical value of the block that only the robot can see. Thus, there’s a certain sequence that will maximize the team’s score, if they can coordinate. The score is also scaled by how likely it was that the coordination was random, so the score decreases as time goes on. The teams played three rounds, and the robot’s method of choosing which block to grab next remained the same across all three rounds.
 
 <br>
-<div class="row">
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/THRI/maria.png" title="Experiment setup" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -127,7 +127,7 @@ These participants could play almost all of the first round, coordinating perfec
 PACT patterns led to fewer mistakes and higher scores for teams. Humans who saw PACT patterns liked the robot, found it both predictable and understandable, and didn’t feel as though a human teammate would have led to a better outcome - which is pretty crazy when you think about it!
 
 <br>
-<div class="row">
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/THRI/predictable.png" title="Predictability and Understandability results" class="img-fluid rounded z-depth-1" %}
     </div>
