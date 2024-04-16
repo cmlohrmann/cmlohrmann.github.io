@@ -18,6 +18,14 @@ related_publications: 2024THRI
 </div>
 <br>
 
+<div class="container">
+  <div class="row">
+    <div class="span4"></div>
+    <div class="span4"><img class="center-block" src="assets/img/THRI/shapes.gif" /></div>
+    <div class="span4"></div>
+  </div>
+</div>
+
 Human-robot teaming is stymied by the ultimate hardware incompatibility issue. Humans reason and make decisions using their brains, an awesome and not fully understood supercomputer, honed through millennia of evolution. Robots mostly use math. These hugely different reasoning styles lead humans and robots to reach different solutions and conclusions. In the visual below, the robot will pursue the true optimal - the lowest possible value for the cost function visible. Humans will reach a low value, though it is unlikely their solution will be optimal. It will instead be satisficable - or “good enough”. This is because human brains are built to solve real-life problems, where the optimal solution may not exist, or it may not be computationally tractable to find it fast enough.
 
 This hardware difference makes it very hard for us as humans to collaborate with robots. When humans collaborate, we build what is called a mental model of our teammates – a structure that we use to predict and estimate the behavior of others. This helps us to set expectations about what someone’s capabilities are, or what they might do. Unfortunately, while the mental models we build are amazing when applied to other humans, they’re pretty bad when we have to reason about robots. Robots don’t match our expectations, and we find them very unpredictable. Anyone who has watched something like a robot vacuum do its work knows this to be true. Oftentimes, the robot will do something that confuses, or irritates us, because it has a different set of sensors than we do, and is using math to reason over that information.
