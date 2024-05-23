@@ -43,28 +43,21 @@ Materials:
   <li>Charm Patterns by Gertie double circle skirt <a href="https://charmpatterns.com/charm-double-circle-skirt/">pattern</a> (made some small modifications)</li>
 </ul>
 
-<br>
-<div class="row align-items-center">
-    <div class="col-md mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/fabric2.jpg" title="Robot fabric" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-md mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/fabric4.jpg" title="More robot fabric" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/fabric2.jpg" title="Robot fabric" class="mx-auto d-block" %}
 </div>
 <div class="caption">
-    Some pictures of the robot fabric. The robots were a different direction than I thought they would be - they were up and down the long part of the fabric, so getting the skirt semicircles cut out was a hassle!
+    A picture of the robot fabric. The robots were a different direction than I thought they would be - they were up and down the long part of the fabric, so getting the skirt semicircles cut out was a hassle!
 </div>
 <br>
 
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/thread_needles.jpg" title="Thread and needles" class="mx-auto d-block" %}
+</div>
 <br>
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/thread_needles.jpg" title="Thread and needles" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/cutters.jpg" title="Cutting implements" class="img-fluid rounded z-depth-1" %}
-    </div>
+
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/cutters.jpg" title="Cutting implements" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     Some pictures of the other materials!
@@ -76,27 +69,31 @@ Because of the direction of the robot pattern, I had to do the piecing a little 
 Other than needing two panels to form the semi-circles (because robot patterns), I followed the pattern exactly other than for the zipper and waistband. When I did my mockup with plain cotton, I found the zipper as written to be a little short for my preference. I recommend playing around with it a bit to see what zipper length works best for you. I didn’t do that, because I’m lazy and was in a bit of a time crunch, so the zipper on the Robo-skirt is now too long for my preference. [insert facepalm emoji here] Because the skirt was patterned, I decided to use an accent color for the waistband, which I feel was definitely the right move, as it adds a nice pop of solid color at the waist. I used basic Joanns black cotton, and it worked well. The pattern says you can do bias tape, which would probably be easier now that I’ve used bias tape. If you can find super wide bias tape, it would probably look the same.
 
 Tricky bits:
-Lapped waistband (though this was my first time doing it) Follow all recommendations for ironing and TRIPLE CHECK that it looks right before sewing the zipper!!
-Getting the waistband to line up right with the skirt
+<ul>
+    <li>Lapped waistband (though this was my first time doing it) Follow all recommendations for ironing and TRIPLE CHECK that it looks right before sewing the zipper!! </li>
+    <li>Getting the waistband to line up right with the skirt</li>
+</ul>
 
 Tips for beginners like me:
-Using a zipper foot may seem daunting, but it’s not as hard as it looks. I practiced by making a few zippered pillowcases for my couch, and that was more than enough practice to feel super confident doing the zipper on the skirt. 
+<ul>
+    <li>Using a zipper foot may seem daunting, but it’s not as hard as it looks. I practiced by making a few zippered pillowcases for my couch, and that was more than enough practice to feel super confident doing the zipper on the skirt. </li>
+    <li>Lapping the waistband was tricky, and I didn’t get it totally right on my plain cotton mockup. Measuring multiple times to be sure, as well as ironing and pinning made this easier for the Robo-skirt. Don’t skip ironing!! </li>
+    <li>Lining up the body of the skirt with the waistband was also tricky, as there’s not a lot of ways to make sure that the skirt body is distributed evenly. I marked the waistband with chalk after measuring the full length and dividing it up, so I could match the seams of the skirt body up with the chalk lines first, to ensure a more even fabric distribution. It didn’t take much time at all, and it definitely paid off.</li>
+</ul>
 
-Lapping the waistband was tricky, and I didn’t get it totally right on my plain cotton mockup. Measuring multiple times to be sure, as well as ironing and pinning made this easier for the Robo-skirt. Don’t skip ironing!!
-
-Lining up the body of the skirt with the waistband was also tricky, as there’s not a lot of ways to make sure that the skirt body is distributed evenly. I marked the waistband with chalk after measuring the full length and dividing it up, so I could match the seams of the skirt body up with the chalk lines first, to ensure a more even fabric distribution. It didn’t take much time at all, and it definitely paid off.
-
-<br>
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/waistband1.jpg" title="The waistband" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/seam1.jpg" title="Seam details" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/waistband1.jpg" title="The waistband" class="mx-auto d-block" %}
 </div>
 <div class="caption">
-    Using a fancy stretch stitch made it easier to attach the waistband. It also makes it s bit easier when doing the seams if you're not super steady, like me.
+    Using a fancy stretch stitch made it easier to attach the waistband.
+</div>
+<br>
+
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/seam1.jpg" title="Seam details" class="mx-auto d-block" %}
+</div>
+<div class="caption">
+    It also makes it a bit easier when doing the seams if you're not super steady, like me. If you look closely the seam is definitely a bit wiggly!
 </div>
 <br>
 
@@ -124,16 +121,18 @@ Embrace your inner Ms. Frizzle.
 
 I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way to signal to others what kind of person I am, and people really seemed to like it! Now I have to think about what I’ll make for next year…
 
-<br>
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/skirt1.jpg" title="The skirt" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/skirt3.jpg" title="The skirt again" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/skirt1.jpg" title="The skirt" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     So cute!
+</div>
+<br>
+
+<div class="center-block">
+    {% include figure.html path="assets/img/roboskirt/skirt3.jpg" title="The skirt again" class="mx-auto d-block" %}
+</div>
+<div class="caption">
+    The amount of fabric used is crazy, but the twirl of the skirt is unbelievable!!!
 </div>
 <br>
