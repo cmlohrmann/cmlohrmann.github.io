@@ -2,7 +2,7 @@
 layout: page
 title: Robo-Skirt
 description: A quick how-to on the retro-style robot skirt I made for HRI 2024!
-img: assets/img/roboskirt/fabric1.jpg
+img: assets/img/roboskirt/fabric1.png
 importance: 4
 category: fun
 ---
@@ -122,7 +122,7 @@ Embrace your inner Ms. Frizzle.
 I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way to signal to others what kind of person I am, and people really seemed to like it! Now I have to think about what I’ll make for next year…
 
 <div class="center-block">
-    {% include figure.html path="assets/img/roboskirt/skirt1.png" title="The skirt" class="d-block" %}
+    {% include figure.html path="assets/img/roboskirt/skirt1.png" title="The skirt" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     So cute!
@@ -130,7 +130,7 @@ I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way 
 <br>
 
 <div class="center-block">
-    {% include figure.html path="assets/img/roboskirt/skirt3.png" title="The skirt again" class="d-block" %}
+    {% include figure.html path="assets/img/roboskirt/skirt3.png" title="The skirt again" class="mx-auto d-block" %}
 </div>
 <div class="caption">
     The amount of fabric used is crazy, but the twirl of the skirt is unbelievable!!!
