@@ -2,7 +2,7 @@
 layout: page
 title: Robo-Skirt
 description: A quick how-to on the retro-style robot skirt I made for HRI 2024!
-img:
+img: assets/img/roboskirt/fabric1.jpg
 importance: 4
 category: fun
 ---
