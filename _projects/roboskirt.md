@@ -121,9 +121,7 @@ Embrace your inner Ms. Frizzle.
 
 I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way to signal to others what kind of person I am, and people really seemed to like it! Now I have to think about what I’ll make for next year…
 
-<div class="center-block">
-    {% include figure.html path="assets/img/roboskirt/skirt1.jpg" title="The skirt" class="d-block" %}
-</div>
+<img src="assets/img/roboskirt/skirt1.jpg" alt="The skirt">
 <div class="caption">
     So cute!
 </div>
