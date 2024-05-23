@@ -32,14 +32,16 @@ So, channeling my inner Ms. Frizzle, I embarked on my robo-skirt journey. I’ve
 I started a few weeks out, and made a mock-up in the cheapest cotton that Joanns sells, because I was nervous about totally messing it up when trying to do it with my fancy fabric. This was the right move. (Though if you’re a more experienced sewist you obviously should skip that.)
 
 Materials:
--7 yds of robot-patterned cotton lawn from Spoonflower (https://www.spoonflower.com/en/fabric/4463794-retro-robots-by-caja_design?country=us&currency=USD&fabric=petal_signature_cotton&fabric_size=test_swatch&measurement_system=imperial)
--¼ of a yd of cotton fabric from Joann's for the waistband
--hook and bar closure
--black thread
--interfacing
--hidden zipper (pattern says 7in, I bought whichever one had 7 in in the range)
--sewing machine gx37 brother (or hand sew idc, you do you)
--Charm Patterns by Gertie double circle skirt pattern (made some small modifications) (https://charmpatterns.com/charm-double-circle-skirt/)
+<ul>
+  <li>7 yds of robot-patterned cotton lawn from <a href="https://www.spoonflower.com/en/fabric/4463794-retro-robots-by-caja_design?country=us&currency=USD&fabric=petal_signature_cotton&fabric_size=test_swatch&measurement_system=imperial">Spoonflower</a></li>
+  <li>¼ of a yd of cotton fabric from Joann's for the waistband</li>
+  <li>hook and bar closure</li>
+  <li>black thread</li>
+  <li>interfacing</li>
+  <li>hidden zipper (pattern says 7in, I bought whichever one had 7 in in the range)</li>
+  <li>sewing machine (or hand sew, you do you)</li>
+  <li>Charm Patterns by Gertie double circle skirt <a href="https://charmpatterns.com/charm-double-circle-skirt/">pattern</a> (made some small modifications)</li>
+</ul>
 
 <br>
 <div class="row align-items-center">
@@ -128,7 +130,7 @@ I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way 
         {% include figure.html path="assets/img/roboskirt/skirt1.jpg" title="The skirt" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/sskirt3.jpg" title="The skirt again" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/roboskirt/skirt3.jpg" title="The skirt again" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
