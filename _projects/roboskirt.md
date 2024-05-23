@@ -45,11 +45,11 @@ Materials:
 
 <br>
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/fabric2.jpg" title="Robot fabric" %}
+    <div class="col-md mt-3 mt-md-0">
+        {% include figure.html path="assets/img/roboskirt/fabric2.jpg" title="Robot fabric" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/roboskirt/fabric4.jpg" title="More robot fabric" %}
+    <div class="col-md mt-3 mt-md-0">
+        {% include figure.html path="assets/img/roboskirt/fabric4.jpg" title="More robot fabric" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
