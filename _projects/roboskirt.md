@@ -130,7 +130,7 @@ I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way 
 <br>
 
 <div class="center-block">
-    {% include figure.html path="assets/img/roboskirt/skirt3.jpg" title="The skirt again" class="d-block" %}
+    {% include figure.html path="assets/img/roboskirt/skirt3.png" title="The skirt again" class="d-block" %}
 </div>
 <div class="caption">
     The amount of fabric used is crazy, but the twirl of the skirt is unbelievable!!!
