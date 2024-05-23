@@ -120,19 +120,3 @@ If you’re pressed for time or funds, a full circle skirt is the way to go. (An
 Embrace your inner Ms. Frizzle.
 
 I had a ton of fun both making and wearing my Robo-skirt. It was an awesome way to signal to others what kind of person I am, and people really seemed to like it! Now I have to think about what I’ll make for next year…
-
-<div class="center-block">
-    {% include figure.html path="assets/img/roboskirt/skirt1.png" title="The skirt" class="mx-auto d-block" %}
-</div>
-<div class="caption">
-    So cute!
-</div>
-<br>
-
-<div class="center-block">
-    {% include figure.html path="assets/img/roboskirt/skirt3.png" title="The skirt again" class="mx-auto d-block" %}
-</div>
-<div class="caption">
-    The amount of fabric used is crazy, but the twirl of the skirt is unbelievable!!!
-</div>
-<br>
