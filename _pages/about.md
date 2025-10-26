@@ -21,7 +21,7 @@ My overarching research goal is to bridge the gap between human cognition and ro
 
 <p float="left">
   <img src="assets/img/ducks/cookie.jpg" width="200" />
-  <img src="assets/img/ducks/me.jpg" width="400" />
+  <img src="assets/img/ducks/me.jpg" width="300" />
   <img src="assets/img/ducks/biscotti.jpg" width="200" /> 
 </p>
 
