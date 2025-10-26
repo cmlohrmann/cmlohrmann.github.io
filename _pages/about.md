@@ -20,9 +20,8 @@ I am deeply passionate about exploring and enhancing the intricate interplay bet
 My overarching research goal is to bridge the gap between human cognition and robot algorithms, enabling them to work seamlessly together as cooperative partners, leveraging their respective strengths to accomplish tasks that neither could do alone. I envision a future where robots are not just tools, but intelligent and adaptable collaborators that are understandable and predictable to those that work with them.
 
 <p float="left">
-  <img src="assets/img/ducks/me.jpg" width="200" />
-  <img src="assets/img/ducks/biscotti.jpg" width="200" /> 
-  <img src="assets/img/ducks/baby1.jpg" width="200" />
+  <img src="assets/img/ducks/me.jpg" width="400" />
+  <img src="assets/img/ducks/biscotti.jpg" width="200" /> />
 </p>
 
 Outside of work, I'm an avid crafter and am a passionate hobby breeder of heritage poultry. Above are some pictures of my prized Australian Spotted ducks, which are classed as critically endangered by the Livestock Conservancy, with less than 500 birds globally. My long term goal is to build a primary breeding flock recognized by the Conservancy.
