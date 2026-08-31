@@ -23,9 +23,9 @@ My overarching research goal is to bridge the gap between human cognition and ro
   <img src="assets/img/Hula/hula_tam.jpeg" width="300" />
 </p>
 
-Outside of work, I'm an avid crafter and am a passionate hobby breeder of heritage poultry. Below are some pictures of my prized Australian Spotted ducks, which are classed as critically endangered by the Livestock Conservancy, with less than 500 birds globally. My long term goal is to build a primary breeding flock recognized by the Conservancy.
+Outside of work, I'm an avid crafter and am a passionate hobby breeder of heritage poultry on my hobby farm. Below are some pictures of my prized Australian Spotted ducks, which are classed as critically endangered by the Livestock Conservancy, with less than 500 birds globally.
 
-<p float="center">
-  <img src="assets/img/ducks/cookie.jpg" width="200" />
+<p style="text-align: center;">
+  <img src="assets/img/ducks/cookie.jpg" width="200" style="margin-right: 10px;"/>
   <img src="assets/img/ducks/biscotti.jpg" width="200" /> 
 </p>
